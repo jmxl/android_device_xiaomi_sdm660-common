@@ -461,7 +461,7 @@ PRODUCT_PACKAGES += \
 
 # KeyHandler
 PRODUCT_PACKAGES += \
-	org.lineageos.keyhandler
+	org.mokee.keyhandler
 
 # Wi-Fi Display
 PRODUCT_BOOT_JARS += \

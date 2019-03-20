@@ -18,7 +18,7 @@
         android:key="camera"
         android:title="@string/camera_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+        <org.mokee.settings.device.preferences.SecureSettingSwitchPreference
             android:defaultValue="false"
             android:key="hal3"
             android:title="@string/camera_hal3_title" />
@@ -29,18 +29,18 @@
         android:key="fingerprint"
         android:title="@string/fp_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+        <org.mokee.settings.device.preferences.SecureSettingSwitchPreference
             android:defaultValue="false"
             android:key="fpaction_enabled"
             android:title="@string/fpaction_enabled" />
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+        <org.mokee.settings.device.preferences.SecureSettingSwitchPreference
             android:defaultValue="false"
             android:key="fp_shutter"
             android:summary="@string/fpshutter_summary"
             android:title="@string/fp_shutter" />
 
-        <org.lineageos.settings.device.preferences.SecureSettingListPreference
+        <org.mokee.settings.device.preferences.SecureSettingListPreference
             android:defaultValue="expnp"
             android:dependency="fpaction_enabled"
             android:dialogTitle="@string/fpaction_dialogTitle"
@@ -56,7 +56,7 @@
         android:key="torch"
         android:title="@string/torch_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingCustomSeekBarPreference
+        <org.mokee.settings.device.preferences.SecureSettingCustomSeekBarPreference
             android:defaultValue="100"
             android:key="torch_brightness"
             android:max="255"
@@ -69,7 +69,7 @@
         android:key="vibration"
         android:title="@string/vibration_title">
 
-        <org.lineageos.settings.device.preferences.VibrationSeekBarPreference
+        <org.mokee.settings.device.preferences.VibrationSeekBarPreference
             android:defaultValue="80"
             android:key="vibration_strength"
             android:max="100"
@@ -88,8 +88,8 @@
             android:title="@string/device_kcal_title">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="org.lineageos.settings.kcal.KCalSettingsActivity"
-                android:targetPackage="org.lineageos.settings.kcal" />
+                android:targetClass="org.mokee.settings.kcal.KCalSettingsActivity"
+                android:targetPackage="org.mokee.settings.kcal" />
         </Preference>
 
         <Preference
@@ -99,8 +99,8 @@
             android:title="@string/ambient_display_xiaomi">
             <intent
                 android:action="android.intent.action.MAIN"
-                android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"
-                android:targetPackage="org.lineageos.settings.doze" />
+                android:targetClass="org.mokee.settings.doze.DozeSettingsActivity"
+                android:targetPackage="org.mokee.settings.doze" />
         </Preference>
     </PreferenceCategory>
 
@@ -108,7 +108,7 @@
         android:key="spectrum_profile"
         android:title="@string/spectrum_profile_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingListPreference
+        <org.mokee.settings.device.preferences.SecureSettingListPreference
             android:defaultValue="0"
             android:dialogTitle="@string/spectrum_dialogTitle"
             android:entries="@array/spectrum_profiles"
@@ -123,13 +123,13 @@
         android:key="audio"
         android:title="@string/audio_title">
 
-        <org.lineageos.settings.device.preferences.SecureSettingSwitchPreference
+        <org.mokee.settings.device.preferences.SecureSettingSwitchPreference
             android:defaultValue="false"
             android:key="dirac_enabled"
             android:summary="@string/dirac_summary"
             android:title="@string/dirac_title" />
 
-        <org.lineageos.settings.device.preferences.SecureSettingListPreference
+        <org.mokee.settings.device.preferences.SecureSettingListPreference
             android:defaultValue="0"
             android:dependency="dirac_enabled"
             android:entries="@array/dirac_headset_pref_entries"
@@ -138,7 +138,7 @@
             android:summary="%s"
             android:title="@string/dirac_headset_title" />
 
-        <org.lineageos.settings.device.preferences.SecureSettingListPreference
+        <org.mokee.settings.device.preferences.SecureSettingListPreference
             android:defaultValue="0,0,0,0,0,0,0"
             android:dependency="dirac_enabled"
             android:entries="@array/dirac_preset_pref_entries"
