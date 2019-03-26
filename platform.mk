@@ -43,14 +43,6 @@ BUILD_FINGERPRINT := google/taimen/taimen:9/PQ2A.190305.002/5240760:user/release
 # Platform properties
 $(call inherit-product, $(PLATFORM_PATH)/platform_prop.mk)
 
-# Alipay
-PRODUCT_PACKAGES += \
-  IFAAService \
-  org.ifaa.android.manager
-
-PRODUCT_BOOT_JARS += \
-  org.ifaa.android.manager
-
 # Android_filesystem_config
 PRODUCT_PACKAGES += \
 	fs_config_files
